@@ -24,5 +24,5 @@ CREATE TABLE vine_table (
   star_rating INTEGER,
   helpful_votes INTEGER,
   total_votes INTEGER,
-  se TEXT
+  vine TEXT
 );
