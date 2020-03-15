@@ -1,6 +1,6 @@
 # BigData_Amazon_reviews_ETL_Cloud
 
-Perform ETL in the cloud AND analyze data using Natural Language Processing (NLP) pipeline including Machine Learning.
+Performing cloud-base ETL and analyzing data using SQL, Natural Language Processing (NLP) pipeline and Machine Learning model.
 
 ## Project Background
 
@@ -10,9 +10,9 @@ This project performed by Spark and completely in the cloud in Google Colab Note
 
 ## ETL Part 
 
-- Github Links: [Github version ETL]() 
+- Github Links: [Github version ETL](/Amazon_Reriews_ETL_process.ipynb) 
 
-- Google Colab Notebook Link: [Google_Colab version ETL] (https://colab.research.google.com/drive/1N0fTd5rpGznaC15aYb5M63PDzCBJ_0e4)
+- Google Colab Notebook Link: <https://colab.research.google.com/drive/1N0fTd5rpGznaC15aYb5M63PDzCBJ_0e4)>
 
 
 ### Extract
@@ -37,7 +37,44 @@ This project performed by Spark and completely in the cloud in Google Colab Note
 Performing basic statistical analysis in SQL.
 Conclusion :[SQLAnalysisConclusion.md](/SQLAnalysisConclusion.md)
 
-2. Pyspark in colab Notebook
+----------------------------------------------------------------------------
+
+2. Pyspark Analysis in colab-Notebook
+Performing advanced statistical classification and regression model for prediction and evaluation in pySpark
 
 
-- Build an Natural Language Processing (NLP) pipeline in pySpark, 
+### Natural Language Process:
+
+[Amazon_Reviews_NLP_ML.ipynb]()
+
+Google Colab Notebook link: <https://colab.research.google.com/drive/1kAFj2v4wxlFVrCksN4CiKrWHC4dQj8f9>
+
+**Conclusion:**
+Naive Bayes Model.
+
+The label of model is the numerical representations of vine (1) and non-vine (0)reviews. The features in model is the review_body column applied to Nutrual Language Process (NLP) and predict whether a given review will be vine or non-vine.
+
+Performing 70% of data to train the Naive Bayes Machine Learning Model, and testing 30% data.
+After evaluate
+The accuracy of the model isn’t perfect, but it’s not too low either: 0.741000.
+
+
+### Classification and Regression:
+
+[Amazon_Reviews_Classification_Regression.ipynb](/Amazon_Reviews_Classification_Regression.ipynb)
+
+Google Colab Notebook link: <https://colab.research.google.com/drive/12YXyhLtu8gTAPczs3lmfIOepOuX9bDkw>
+
+- **Naive Bayes Model Conclusion:**
+
+ Naive Bayes Model's prediction computes the conditional probability distribution of each feature given each label.
+ Accuracy of model at predicting vine reviews was : 0.976541, which means there will be 0.97 accuracy to determine if a review will be vine reviews based on helpful_votes, total_votes and star_rating.
+
+- **Linear Regression Model Conclusion:**
+
+Using attributes that are the number of helpful_votes and total_votes, to predict label: Star_rating. The correlation coefficients (r) are 0.097 for helpful_votes varivale, -0.0914 for total_votes. There are weak or no correlation between star_rating for a review and corresponding review's number of helpful_votes and total_votes.
+
+- **Logistic Regression Model Conclusion:**
+
+Logistic regression is a statistical method for analyzing a dataset in which there are 'helpful_votes', 'total_votes','star_rating' variables that determine an binary outcome ('vine' column). 
+The area under the ROC curve (AUC) is a measure of how well parameters can distinguish between two groups. In this case, Predict AUC is 0.6 means the threshold would be 60%.

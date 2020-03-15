@@ -1,6 +1,6 @@
 # SQL Statistical Analysis
 
-Code: [analysisSQL.sql](/SQL/analysisSQL.sql)
+SQL Code: [analysisSQL.sql](/SQL/analysisSQL.sql)
 
 --------------------------
 
