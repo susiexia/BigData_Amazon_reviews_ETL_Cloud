@@ -1,6 +1,6 @@
 # BigData_Amazon_reviews_ETL_Cloud
 
-Performing cloud-base ETL and analyzing data using SQL, Natural Language Processing (NLP) pipeline and Machine Learning model.
+Performing cloud-based ETL and analyzing data using SQL, Natural Language Processing (NLP) pipeline and Machine Learning model.
 
 ## Project Background
 
@@ -12,12 +12,10 @@ This project performed by Spark and completely in the cloud with Google Colab No
 
 - Github Link: [Github version ETL](/Amazon_Reriews_ETL_process.ipynb) 
 
-- Google Colab Notebook Link: <https://colab.research.google.com/drive/1N0fTd5rpGznaC15aYb5M63PDzCBJ_0e4)>
-
 
 ### Extract
 
-- Extract Amazon reviews dataset from AWS S3 data storage. [S3_datasets_link]("https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Beauty_v1_00.tsv.gz")
+- Extract Amazon reviews dataset from AWS S3 data storage. <"https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Beauty_v1_00.tsv.gz">
 
 - Load and read reviews dataset into DataFrame of Pyspark with Google Colab Notebook.
 
@@ -33,19 +31,20 @@ This project performed by Spark and completely in the cloud with Google Colab No
 
 ## Analysis Part 
 
-1. SQL statistical Analysis
+1. **SQL statistical Analysis**
+
 Performing basic statistical analysis in SQL.
+
 Conclusion :[SQLAnalysisConclusion.md](/SQLAnalysisConclusion.md)
 
 
-
-2. Machine Learning Analysis in Colab-Notebook
+2. **Machine Learning Analysis in Colab-Notebook**
 
 Performing advanced statistical classification and regression model for prediction and evaluation in pySpark.
 
 Conclusion :[ML_AnalysisConclusion.md](/ML_AnalysisConclusion.md)
 
-### Natural Language Process with Naive Bayes ML model:
+#### Natural Language Process with Naive Bayes ML model:
 
 - Github Link: [Amazon_Reviews_NLP_ML.ipynb](/Amazon_Reviews_NLP_ML.ipynb)
 
@@ -53,7 +52,7 @@ Conclusion :[ML_AnalysisConclusion.md](/ML_AnalysisConclusion.md)
 
 
 
-### Classification and Regression:
+#### Classification and Regression:
 
 - Github Link: [Amazon_Reviews_Classification_Regression.ipynb](/Amazon_Reviews_Classification_Regression.ipynb)
 
