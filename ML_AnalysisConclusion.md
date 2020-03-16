@@ -9,8 +9,7 @@ Performing advanced statistical classification and regression model for predicti
 - Google Colab Notebook link: <https://colab.research.google.com/drive/1kAFj2v4wxlFVrCksN4CiKrWHC4dQj8f9>
 
 
-- The label of model is the numerical representations of vine (1) and non-vine (0)reviews. The features in model is the review_body column applied to Nutrual Language Process (NLP) and predict whether a given review will be vine or non-vine. The prediction column will indicate with a 1.0 if the model thinks this review pertains  of vine and 0.0 if it thinks it’s non-vine review. 
-
+The label of model is the numerical representations of vine (1) and non-vine (0)reviews. The features in model is the review_body column applied to Nutrual Language Process (NLP) and predict whether a given review will be vine or non-vine. The prediction column will indicate with a 1.0 if the model thinks this review pertains  of vine and 0.0 if it thinks it’s non-vine review. 
 Performing 70% of data to train the Naive Bayes Machine Learning Model, and testing 30% data.
 For the evaluate part, accuracy of model at predicting reviews was 0.959364.
 
